@@ -1,9 +1,7 @@
 const initialState = {
     user : [],
+    type : "",
     loginStatus:"",
-    registrationSucess: '',
-    loading : true,
-    error: false,
   };
 
 const usersReducer = (state = initialState, { type,user,loginStatus }) => {

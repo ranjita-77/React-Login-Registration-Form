@@ -4,7 +4,7 @@ import { Link,useNavigate } from 'react-router-dom'
 import { useDispatch,useSelector } from 'react-redux';
 import Alert from "react-bootstrap/Alert";
 
-import { TextField,EmailField,PasswordField,Button } from '../../FormElements/index'
+import { TextField,EmailField,PasswordField,Button } from '../FormElements/'
 import { userActions } from '../../store/actions/userAction';
 import { CryptoHandlertoEncrypt, CryptoHandlertoDecrypt } from '../../helper/crypto';
 
@@ -73,8 +73,7 @@ const Form = ({type="",heading="",buttonlabel="",bottomText="",linkText="",linkP
     <Alert
         show={messageDetails.status}
         variant={messageDetails.errorType}
-        >{messageDetails.errorMessage} 
-        
+        >{messageDetails.errorMessage}
     </Alert>
     <h3>{heading}</h3>
     <FormProvider {...methods} >
