@@ -13,10 +13,10 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Login/>} exact />
-                <Route path="/register" element={<Registration/>} exact />
-                <Route path="/login" element={<Login/>} exact />
-                <Route path="/my-account" element={<MyAccount/>} exact />
-                <Route path="/logout" element={<Logout/>} exact />
+                <Route path="/register" element={<Registration/>} />
+                <Route path="/login" element={<Login/>} />
+                <Route path="/my-account" element={<MyAccount/>} />
+                <Route path="/logout" element={<Logout/>} />
             </Routes >
         </Router>
       </div>
