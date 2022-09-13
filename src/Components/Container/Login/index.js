@@ -1,2 +1,2 @@
-export { Login } from './login';
-export { Logout } from './logout';
+export { Login } from './Login'
+export { Logout } from './Logout'

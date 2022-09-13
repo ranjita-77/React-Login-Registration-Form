@@ -1,4 +1,4 @@
-import Form from "../../Forms/form"
+import Form from "../../Forms/Form"
 
 /**
  * Registration Component 

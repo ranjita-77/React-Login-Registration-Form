@@ -1,1 +1,1 @@
-export {MyAccount} from './myaccount';
+export {MyAccount} from './MyAccount';

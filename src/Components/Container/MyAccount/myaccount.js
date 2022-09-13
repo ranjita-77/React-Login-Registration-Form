@@ -16,15 +16,14 @@ export const MyAccount = () => {
             navigate("/login");
         }
     });
-        
     return(
         <div className="form-body">
         <div className="row">
             <div className="form-holder">
                 <div className="form-content">
                     <div className="form-items">
-                        <h3>Login</h3>
-                        <p>Welcome {user.fullName?user.fullName:''} !! </p>
+                        <h3>Welcome</h3>
+                        <p>{user.fullName?user.fullName:''} !! </p>
                         <p className="App-link"><Link className="App-link" to="/logout">Logout</Link></p>
                     </div>
                 </div>

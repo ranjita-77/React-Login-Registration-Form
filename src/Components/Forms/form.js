@@ -4,7 +4,7 @@ import { Link,useNavigate } from 'react-router-dom'
 import { useDispatch,useSelector } from 'react-redux';
 import Alert from "react-bootstrap/Alert";
 
-import { TextField,EmailField,PasswordField,Button } from '../FormElements/'
+import { TextField,EmailField,PasswordField,Button } from '../FormElements'
 import { userActions } from '../../store/actions/userAction';
 import { CryptoHandlertoEncrypt, CryptoHandlertoDecrypt } from '../../helper/crypto';
 
@@ -34,8 +34,8 @@ const Form = ({type="",heading="",buttonlabel="",bottomText="",linkText="",linkP
         delete data.confPassword;
         switch(type) {
             case 'login':
-                const decryptedData = user.password?CryptoHandlertoDecrypt(user.password,data.password):'';
-                if (data.email === user.email && data.password === decryptedData.password && !loginStatus) {
+                const decryptedPassword = user.password?CryptoHandlertoDecrypt(user.password,data.password):'';
+                if (data.email === user.email && data.password === decryptedPassword && !loginStatus) {
                     dispatch(userActions.login({user:user},true));
                     navigate("/my-account");
                     return false 
